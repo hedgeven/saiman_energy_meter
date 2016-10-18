@@ -3,8 +3,24 @@ A simple library for getting data Saiman Energy Meters (Дала СА4-Э720 П 
 
 ## Usage:
 * Clone this repo
+
+<!-- language: bash -->
+
+    git clone https://github.com/hedgeven/saiman_energy_meter.git
+    
 * Get minimalmodbus library
-wget https://raw.githubusercontent.com/pyhys/minimalmodbus/master/minimalmodbus.py
+
+<!-- language: bash -->
+
+    wget https://raw.githubusercontent.com/pyhys/minimalmodbus/master/minimalmodbus.py
+
 * Modify one string in minimalmodbus library
-sed -i 's/return _numToTwoByteString(register, LsbFirst=True)/return _numToTwoByteString(register, LsbFirst=False)/g' minimalmodbus.py
+
+<!-- language: bash -->
+
+    sed -i 's/return _numToTwoByteString(register, LsbFirst=True)/return _numToTwoByteString(register, LsbFirst=False)/g' minimalmodbus.py
+
 * Run find_devices.py
+
+<!-- language: bash -->
+    python3 ./find_devices.py
